@@ -38,7 +38,7 @@ class Lagoujob(Base):  # 这个参数父类名
 
 class Lagou1Pipeline(object):
     def __init__(self):
-        connection = 'mysql+pymysql://root:Fzy520mm!@localhost:3306/lagou?charset=utf8'  # UTF8MB4
+        connection = 'mysql+pymysql://root:xxxxxxx@localhost:3306/lagou?charset=utf8'  # UTF8MB4
         engine = create_engine(connection, echo=True)  # 数据库连接
         DBSession = sessionmaker(bind=engine)  # 创建会话对象，用于数据表的操作
         self.Sqlsession = DBSession()
